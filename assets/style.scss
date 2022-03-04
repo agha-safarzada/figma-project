@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap%22");
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-left: 124px;
+    .title {
+        width: 365px;
+        height: 93px;
+        margin-top: 91px;
+        margin-bottom: 18px;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 56px;
+        color: black;
+        p {
+            margin: 0;
+        }
+    }
+    .container {
+        display: flex;
+        .course-info {
+            width: 662px;
+            height: 374px;
+            margin-right: 190px;
+            font-size: 24px;
+            overflow: hidden;
+        }
+        .course-img {
+            position: relative;
+            img {
+                &:first-child {
+                    width: 314px;
+                }
+                &:last-child {
+                    position: absolute;
+                    left: -35px;
+                    top: 280px;
+                    z-index: -2;
+                    width: 366px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 834px) {
+    body {
+        padding-left: 72px;
+        .title {
+            width: 211px;
+            height: 53px;
+            margin-top: 56px;
+            margin-bottom: 10px;
+            font-size: 32px;
+            line-height: 32px;
+            color: black;
+        }
+        .container {
+            display: flex;
+            .course-info {
+                width: 383px;
+                height: 216px;
+                margin-right: 110px;
+                font-size: 14px;
+            }
+            .course-img {
+                img {
+                    &:first-child {
+                        width: 181px;
+                    }
+                    &:last-child {
+                        width: 211px;
+                        left: -20px;
+                        top: 165px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        padding-left: 36px;
+        .title {
+            width: 170px;
+            height: 43px;
+            margin-top: 56px;
+            margin-bottom: 8px;
+            font-size: 26px;
+            line-height: 26px;
+            color: black;
+        }
+        .container {
+            flex-direction: column;
+            .course-info {
+                width: 308px;
+                height: 174px;
+                margin-right: 0;
+                font-size: 12px;
+            }
+            .course-img {
+                margin: auto;
+                img {
+                    &:first-child {
+                        width: 146px;
+                    }
+                    &:last-child {
+                        width: 170px;
+                        left: -14px;
+                        top: 131px;
+                    }
+                }
+            }
+        }
+    }
+}
